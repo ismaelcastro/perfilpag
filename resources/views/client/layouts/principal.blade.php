@@ -5,10 +5,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<meta name="csrf-token" content="{{ csrf_token()}}">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
-	<!-- CHAMADAS ARQUIVOS .CSS -->
-	<link rel="stylesheet" href="{{ URL::asset('css/client/css/style.css') }}">
-	<link rel="stylesheet" href="{{ URL::asset('css/client/css/themes/all-themes.css') }}">
+	<!-- CHAMADAS ARQUIVOS .CSS -->  
+    <link rel="stylesheet" href="{{ URL::asset('plugins/bootstrap/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('plugins/node-waves/waves.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('plugins/animate-css/animate.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('plugins/morrisjs/morris.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/client/css/style.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/client/css/themes/all-themes.css') }}">
 	<!-- FIM DAS CHAMADAS ARQUIVOS .CSS -->
 
 
@@ -793,34 +800,34 @@
     <script src="{{ URL::asset('plugins/jquery-slimscroll/jquery.slimscroll.js') }}"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="{{URL::asset('plugins/node-waves/waves.js'}}"></script>
+    <script src="{{ URL::asset('plugins/node-waves/waves.js') }}"></script>
 
     <!-- Jquery CountTo Plugin Js -->
-    <script src="{{URL::asset('plugins/jquery-countto/jquery.countTo.js')}}"></script>
+    <script src="{{ URL::asset('plugins/jquery-countto/jquery.countTo.js') }}"></script>
 
     <!-- Morris Plugin Js -->
-    <script src="plugins/raphael/raphael.min.js"></script>
-    <script src="plugins/morrisjs/morris.js"></script>
+    <script src="{{ URL::asset('plugins/raphael/raphael.min.js') }}" ></script>
+    <script src="{{ URL::asset('plugins/morrisjs/morris.js') }}"></script>
 
     <!-- ChartJs -->
-    <script src="plugins/chartjs/Chart.bundle.js"></script>
+    <script src="{{ URL::asset('plugins/chartjs/Chart.bundle.js') }}"></script>
 
     <!-- Flot Charts Plugin Js -->
-    <script src="plugins/flot-charts/jquery.flot.js"></script>
-    <script src="plugins/flot-charts/jquery.flot.resize.js"></script>
-    <script src="plugins/flot-charts/jquery.flot.pie.js"></script>
-    <script src="plugins/flot-charts/jquery.flot.categories.js"></script>
-    <script src="plugins/flot-charts/jquery.flot.time.js"></script>
+    <script src="{{ URL::asset('plugins/flot-charts/jquery.flot.js') }}"></script>
+    <script src="{{ URL::asset('plugins/flot-charts/jquery.flot.resize.js') }}"></script>
+    <script src="{{ URL::asset('plugins/flot-charts/jquery.flot.pie.js') }}"></script>
+    <script src="{{ URL::asset('plugins/flot-charts/jquery.flot.categories.js') }}"></script>
+    <script src="{{ URL::asset('plugins/flot-charts/jquery.flot.time.js') }}"></script>
 
     <!-- Sparkline Chart Plugin Js -->
-    <script src="plugins/jquery-sparkline/jquery.sparkline.js"></script>
+    <script src="{{ URL::asset('plugins/jquery-sparkline/jquery.sparkline.js') }}"></script>
 
     <!-- Custom Js -->
-    <script src="js/admin.js"></script>
-    <script src="js/pages/index.js"></script>
+    <script src="{{ URL::asset('js/admin.js') }}"></script>
+    <script src="{{ URL::asset('js/pages/index.js') }}"></script>
 
     <!-- Demo Js -->
-    <script src="js/demo.js"></script>
+    <script src="{{ URL::asset('js/demo.js') }}"></script>
 	
 </body>
 </html>
